@@ -1,0 +1,1 @@
+Diese Verzeichnisse enthalten die Beispielprogramme zu den C-Übungen im Sommer 2023

@@ -7,7 +7,7 @@ int main()
 {
 	double PI = 3.1415926535898;
 	double h,r;
-	printf("Geben Sie den Wert für r ein: ");
+	printf("Geben Sie den Wert für r ein:  ");
 	scanf("%lf",&r);
 
 	printf("Geben Sie den Wert für h ein: ");

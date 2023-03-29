@@ -16,13 +16,13 @@ int main()
       b = 2;
       printf("Im ersten Block ist a + b = %d\n",(a+b)); // 7
     }
-    printf("Nach dem ersten Block ist a + b = %d\n",(a+b)); // 12
+    printf("Nach dem ersten Block ist a + b = %d\n",(a+b)); // 7
     {
       int b = 7;
       printf("Im zweiten Block ist a + b = %d\n",(a+b)); // 12
     }
-    printf("Nach dem zweiten Block ist b = %d\n",b); // 7
-    printf("Nach dem zweiten Block ist a + b = %d\n",(a+b)); //12
+    printf("Nach dem zweiten Block ist b = %d\n",b); // 2
+    printf("Nach dem zweiten Block ist a + b = %d\n",(a+b)); //7
 
     return 0;
 }

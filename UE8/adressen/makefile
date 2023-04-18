@@ -1,4 +1,4 @@
-PROGRAM = zeiger1
+PROGRAM = adressen
 SOURCES.c = $(PROGRAM).c
 
 SOURCES = \
@@ -10,7 +10,7 @@ OBJECTS = \
 
 CC = gcc
 
-CFLAGS = -std=c99 -O0 -Wall -Wconversion -Wfatal-errors
+CFLAGS = -std=c99 -O3 -Wall -Wconversion -Wfatal-errors
 LDLIBS = -lm
 
 all:	$(PROGRAM)

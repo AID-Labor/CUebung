@@ -3,11 +3,11 @@
 
 #include <stdio.h>
 
-void tauschen(double a, double b)
+void tauschen(double* pa, double *pb)
 {
-	double h = a;
-	a = b;
-	b = h;
+	double h = *pa;
+	*pa = *pb;
+	*pb = h;
 }
 
 int main()
@@ -16,7 +16,7 @@ int main()
 
 	double m = 10.1;
 	double n = 20.2;
-	tauschen(m, n);
+	tauschen(&m, &n);
 	printf("m=%.2lf\nn=%.2lf\n",m,n);
 
 	return 0;

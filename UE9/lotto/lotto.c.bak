@@ -1,0 +1,39 @@
+// Übung 9
+// Lottozahlen
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int lottozahl()
+{
+	return 1+rand()%49;
+}
+
+void ausgabe(int lotto[])
+{
+	for (int i=0;i<6;i++)
+	{
+		printf("Die %i Lottozahl ist %i\n",(i+1),lotto[i]);
+	}
+}
+
+int main()
+{
+	int lotto[6];
+	srand((unsigned)time(NULL));
+	for (int i=0;i<6;i++)
+	{
+		int doppelt; 
+		do
+		{
+			doppelt = 0;
+			lotto[i] = lottozahl();
+			for(int j=0;j<i;j++)
+				if (lotto[i]==lotto[j]) doppelt=1;
+		} while(doppelt);
+	}
+
+	ausgabe(lotto);
+	return 0;
+}
